@@ -15,6 +15,7 @@ class ConditionTest {
         condition.increaseCurrentTemperature();
         assertEquals(30, condition.getCurrentTemperature());
     }
+
     // Уменьшить текущую температуру на 1гр
     @Test
     public void decreaseCurrentTemperature() {
@@ -25,6 +26,7 @@ class ConditionTest {
         condition.decreaseCurrentTemperature();
         assertEquals(10, condition.getCurrentTemperature());
     }
+
     // Попытка увеличить максимальную температуру
     @Test
     public void increaseFromMax() {
@@ -35,6 +37,7 @@ class ConditionTest {
         condition.increaseCurrentTemperature();
         assertEquals(30, condition.getCurrentTemperature());
     }
+
     // Попытка уменьшить минимальную температуру
     @Test
     public void decreaseFromMin() {
@@ -45,6 +48,7 @@ class ConditionTest {
         condition.decreaseCurrentTemperature();
         assertEquals(10, condition.getCurrentTemperature());
     }
+
     // Уменьшение максимальной температуры
     @Test
     public void decreaseFromMax() {
@@ -55,6 +59,7 @@ class ConditionTest {
         condition.decreaseCurrentTemperature();
         assertEquals(29, condition.getCurrentTemperature());
     }
+
     // Увеличение минимальной температуры
     @Test
     public void increaseFromMin() {
@@ -65,6 +70,7 @@ class ConditionTest {
         condition.increaseCurrentTemperature();
         assertEquals(11, condition.getCurrentTemperature());
     }
+
     // Увеличение температуры ниже, чем минимальная
     @Test
     public void increaseFromLowerThanMin() {
@@ -75,6 +81,7 @@ class ConditionTest {
         condition.increaseCurrentTemperature();
         assertEquals(11, condition.getCurrentTemperature());
     }
+
     // Уменьшение температуры ниже, чем минимальная
     @Test
     public void decreaseFromLowerThanMin() {
@@ -85,6 +92,7 @@ class ConditionTest {
         condition.decreaseCurrentTemperature();
         assertEquals(10, condition.getCurrentTemperature());
     }
+
     // Увеличение температуры выше, чем максимальная
     @Test
     public void increaseFromOverMax() {

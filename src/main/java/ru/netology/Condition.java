@@ -30,7 +30,7 @@ public class Condition {
             this.currentTemperature = maxTemperature;
             return;
         }
-                if (currentTemperature < minTemperature) {
+        if (currentTemperature < minTemperature) {
             this.currentTemperature = minTemperature;
             return;
         }
